@@ -1,0 +1,6 @@
+name: TnTRun
+version: '1.0'
+api: ["1.0.0"]
+main: me.noc.tntrun.TnTRun
+api-version: 1.17
+load: STARTUP
