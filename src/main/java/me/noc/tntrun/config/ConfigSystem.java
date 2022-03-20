@@ -19,7 +19,7 @@ public class ConfigSystem {
 
     public void createDefaultConfig() {
         this.addDefault("tntrun.prefix", "TnTRun");
-        this.addDefault("tntrun.locationset", "Location set successfully");
+        this.addDefault("tntrun.locationset", "Location has been set successfully!");
         this.addDefault("tntrun.time", 1);
         this.addDefault("tntrun.message.start", "Game starts in");
     }
