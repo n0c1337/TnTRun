@@ -22,7 +22,7 @@ public class LocationSystem {
     public void addLocation(String path, Location location) {
         this.config.set("tntrun." + path + ".World", location.getLevel().getFolderName());
         this.config.set("tntrun." + path + ".X", location.getX());
-        this.config.set("tntrun." + path + ".YA", location.getY());
+        this.config.set("tntrun." + path + ".Y", location.getY());
         this.config.set("tntrun." + path + ".Z", location.getZ());
         this.config.set("tntrun." + path + ".Yaw", location.getYaw());
         this.config.set("tntrun." + path + ".Pitch", location.getPitch());
@@ -34,7 +34,7 @@ public class LocationSystem {
         Level level = this.plugin.getServer().getLevelByName(this.config.getString("tntrun." + path + ".World"));
         if (level != null) {
             double x = this.config.getDouble("tntrun." + path + ".X");
-            double y = this.config.getDouble("tntrun." + path + ".YA");
+            double y = this.config.getDouble("tntrun." + path + ".Y");
             double z = this.config.getDouble("tntrun." + path + ".Z");
             double yaw = this.config.getDouble("tntrun." + path + ".Yaw");
             double pitch = this.config.getDouble("tntrun." + path + ".Pitch");
